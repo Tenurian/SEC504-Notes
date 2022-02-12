@@ -167,7 +167,7 @@ These tools from the Sysinternals library run as CLI. When possible use 64bit ve
 ## Metasploit
 
 ### Automation <!-- omit in toc -->
-Store raw msfconsole commands in `.rc` files and then execute them with `msfconsole -q -r some_rc_file.rc`
+Store raw msfconsole commands in `.rc` files and then execute them with `msfconsole -q -r some_rc_file.rc`.
 Example rc file:
 ```
 use exploit/windows/smb/psexec
