@@ -116,6 +116,7 @@ enables logging of the current shell
 - `-1` through `-20` will print the bottom _n_ lines of the file, based on what number follows the -
 
 #### tcpdump <!-- omit in toc -->
+It's like wireshark but for CLI. Uses Berkeley Packet Filtering.
 - `-A` prints the ASCII Hex output of the packet
 - `-i` tells `tcpdump` which interface to use
   - We should be using `TAP1` or something similar in the CTF Challenge
