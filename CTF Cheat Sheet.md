@@ -194,6 +194,8 @@ applications execute interactively.
   - `where name=nssm.exe`
 - `list brief` short list
 - `list full` used to view more detailed info about what's being searched
+- `/node:"SERVER_NAME"` allows for connection to remote server
+- `/user:"somedomain\someuser"` lets you make the wmic request with this user account
 
 Useful examples: 
 - `wmic process where name="FlashUpdate.exe" list full`
