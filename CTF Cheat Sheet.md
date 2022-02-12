@@ -104,11 +104,15 @@ nmap 192.168.0.1/24
 OSINT tool
 
 ### S <!-- omit in toc -->
+#### script <!-- omit in toc -->
+enables logging of the current shell
+
 #### sed <!-- omit in toc -->
 `sed "s/somepattern/replacement/" file_or_string` replaces instances of somepattern with replacement 
 
-#### script <!-- omit in toc -->
-enables logging of the current shell
+#### sudo <!-- omit in toc -->
+`sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to activate privesc.
+- `-l` lists what actions a user is allowed to run with `sudo`
 
 ### T <!-- omit in toc -->
 #### tail <!-- omit in toc -->
@@ -116,8 +120,8 @@ enables logging of the current shell
 - `-1` through `-20` will print the bottom _n_ lines of the file, based on what number follows the -
 
 #### tcpdump <!-- omit in toc -->
-`tcpdump -i eth0 'src host 192.168.0.1 and dst port 80'`
-It's like wireshark but for CLI. Uses Berkeley Packet Filtering.
+`sudo tcpdump -i eth0 'src host 192.168.0.1 and dst port 80'`
+It's like wireshark but for CLI. Uses Berkeley Packet Filtering. Needs sudo most of the time.
 - `-A` prints the ASCII Hex output of the packet
 - `-i` tells `tcpdump` which interface to use
   - We should be using `TAP1` or something similar in the CTF Challenge
