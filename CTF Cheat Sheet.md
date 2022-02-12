@@ -210,7 +210,11 @@ Allows for the creation of specifically packaged and targeted malware.
 ---
 
 ## Volatility Framework 
-`vol.py` runs the volatility framework
+`python vol.py` runs the volatility framework. See 504.1 Lab #3 for more information
+- `python vol.py dlllist > outfile.txt`
+- `python vol.py filescan > outfile.txt`
+- `python vol.py pstree > outfile.txt`
+- `python vol.py netscan > outfile.txt`
 
 ---
 
