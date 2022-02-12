@@ -92,6 +92,7 @@
 ### grep
 `grep "some string" /path/to/file` looks for some string in file
 - `-e` allows for the use of regex
+  - `egrep` is a similar command to `grep -e` but with a few different options.
 - `-i` case insensitive mode
 - `-v` returns the contents of the file _without_ the matching lines
 
@@ -270,11 +271,13 @@ These tools from the Sysinternals library run as GUI Apps. When possible, use th
 
 ## T
 ### Task Scheduler
+Built-in windows task viewer. Can be used to see all the tasks and find malicious ones.
 
 # OS Agnostic GUI Applications
 
 ## S
 ### Spiderfoot
+OSINT tool (WebAPP). Might not be used in CTF but still useful.
 
 ---
 
