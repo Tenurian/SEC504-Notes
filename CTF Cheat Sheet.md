@@ -343,19 +343,19 @@ These tools from the Sysinternals library run as GUI Apps. When possible, use th
 
 ### T <!-- omit in toc -->
 > #### Task Scheduler <!-- omit in toc -->
-Built-in windows task viewer. Can be used to see all the tasks and find malicious ones.
+> Built-in windows task viewer. Can be used to see all the tasks and find malicious ones.
 
 ## OS Agnostic GUI Applications
 ### S <!-- omit in toc -->
 > #### Spiderfoot <!-- omit in toc -->
-OSINT tool (WebAPP). Might not be used in CTF but still useful.
+> OSINT tool (WebAPP). Might not be used in CTF but still useful.
 
 ---
 
 # Cloud Tools
 ## A <!-- omit in toc -->
-### aws <!-- omit in toc -->
-`aws` run commands on an amazon web service server
+> ### aws <!-- omit in toc -->
+> `aws` run commands on an amazon web service server
 
 ---
 
