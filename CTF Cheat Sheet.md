@@ -176,6 +176,16 @@ PowerShell Module for Threat Hunting via Windows Event Logs
 - [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
 
 ### N <!-- omit in toc -->
+#### net <!-- omit in toc -->
+- `net localgroup`
+  - lists all local groups
+  - `net localgroup GROUPNAME` lists info about a specific local group
+- `net use * \\path\to\network\share$`
+  - mounts network share
+- `net user`
+  - lists all users
+  - `net user USERNAME` lists info about a specific user
+
 #### netstat <!-- omit in toc -->
 `netstat` shows network statistics
 - `-a` display all active TCP and UDP connections
