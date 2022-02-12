@@ -137,9 +137,16 @@ enables logging of the current shell
 #### Sysinternals <!-- omit in toc -->
 These tools from the Sysinternals library run as CLI. When possible use 64bit versions.
 - Procdump
+  - Dumps info related to a specific process
 - PsExec
+  - Runs a program on a remote system, where remotely executed console
+applications execute interactively.
 - PsList
+  - Lists all processes
+- PsTree
+  - Lists all processes in Tree form, where children are nested under their parent process
 - Strings
+  - Prints strings grabbed from the executable binaries.
 
 ## OS Agnostic CLI
 
