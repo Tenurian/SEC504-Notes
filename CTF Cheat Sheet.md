@@ -162,9 +162,10 @@ Launches the VI Improved editor
 ### N <!-- omit in toc -->
 #### netstat <!-- omit in toc -->
 `netstat` shows network statistics
-- `-a`
-- `-n`
-- `-o`
+- `-a` display all active TCP and UDP connections
+- `-n` do not resolve names
+- `-o` show the process id is associated with that connection
+- `-b` shows what program is associated with that connection
 
 ### S <!-- omit in toc -->
 #### schtasks <!-- omit in toc -->
@@ -183,6 +184,10 @@ applications execute interactively.
   - Lists all processes in Tree form, where children are nested under their parent process
 - Strings
   - Prints strings grabbed from the executable binaries.
+
+### W <!-- omit in toc -->
+#### wmic <!-- omit in toc -->
+
 
 ## OS Agnostic CLI
 
