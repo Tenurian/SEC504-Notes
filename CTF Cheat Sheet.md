@@ -111,7 +111,7 @@ enables logging of the current shell
 `sed "s/somepattern/replacement/" file_or_string` replaces instances of somepattern with replacement 
 
 #### sudo <!-- omit in toc -->
-`sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to activate privesc.
+`sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to  PrivEsc.
 - `-l` lists what actions a user is allowed to run with `sudo`
 
 ### T <!-- omit in toc -->
