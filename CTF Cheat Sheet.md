@@ -2,11 +2,6 @@
 
 - [Command Line Interface](#command-line-interface)
   - [Linux CLI](#linux-cli)
-    - [F](#f)
-      - [find](#find)
-    - [V](#v)
-      - [vi](#vi)
-      - [vim](#vim)
   - [Windows CLI](#windows-cli)
   - [OS Agnostic CLI](#os-agnostic-cli)
 - [Frameworks](#frameworks)
@@ -33,8 +28,8 @@
 #### curl <!-- omit in toc -->
 `curl http://some_website_or_ip` downloads the files located on some website or ip
 
-### F
-#### find
+### F <!-- omit in toc -->
+#### find <!-- omit in toc -->
 `find / -name somefile` Searches the filesystem for a file
 - `-name` sets the filename to look for. * is a wildcard
 - `-iname` looks for a file case-insensitively
@@ -123,12 +118,12 @@ enables logging of the current shell
 #### tcpdump <!-- omit in toc -->
 - `-n` disables name resolution
 
-### V
-#### vi
+### V <!-- omit in toc -->
+#### vi <!-- omit in toc -->
 Launches the vi editor
 - not sure why you'd ever need this on your own attack platform as you should have `vim` or `nano` installed, but still useful for when you get onto pivot machines that don't have either of those and you need a command-line editor.
 
-#### vim
+#### vim <!-- omit in toc -->
 Launches the VI Improved editor
 - I'm not good at using `vi` or `vim` so you'll have to get help from the documentation. I do know you can do a shell escape with both `vi` and `vim` by running something along the lines of:
   - `sudo vi somefile`
