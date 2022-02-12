@@ -22,93 +22,93 @@
 
 ### A <!-- omit in toc -->
 >#### awk <!-- omit in toc -->
-`awk -F: '{print $1}'` prints the first field when a file is separated by :
-- `-F` define the Field Separator
-  - `awk -F:` will split whatever you give it on the `:` character
-- `'{print $1}'` prints field 1
-  - the number can be swapped out from 0 to however many columns exist when the line is split based on the field separator
+>`awk -F: '{print $1}'` prints the first field when a file is separated by :
+>- `-F` define the Field Separator
+>  - `awk -F:` will split whatever you give it on the `:` character
+>- `'{print $1}'` prints field 1
+>  - the number can be swapped out from 0 to however many columns exist when the line is split based on the field separator
 
 ### C <!-- omit in toc -->
-#### curl <!-- omit in toc -->
-`curl http://some_website_or_ip` downloads the files located on some website or ip
+>#### curl <!-- omit in toc -->
+>`curl http://some_website_or_ip` downloads the files located on some website or ip
 
 ### D <!-- omit in toc -->
-#### dig <!-- omit in toc -->
-DNS Interrogation tool
+>#### dig <!-- omit in toc -->
+>DNS Interrogation tool
 
 ### F <!-- omit in toc -->
-#### find <!-- omit in toc -->
-`find / -name somefile` Searches the filesystem for a file
-- `-name` sets the filename to look for. * is a wildcard
-- `-iname` looks for a file case-insensitively
-- `-exec` executes the next lines of code.
-  - this can be used for PrivEsc with `sudo` permissions, like so:
-    - `sudo find . -exec /bin/bash {} \;`
+>#### find <!-- omit in toc -->
+>`find / -name somefile` Searches the filesystem for a file
+>- `-name` sets the filename to look for. * is a wildcard
+>- `-iname` looks for a file case-insensitively
+>- `-exec` executes the next lines of code.
+>  - this can be used for PrivEsc with `sudo` permissions, like so:
+>    - `sudo find . -exec /bin/bash {} \;`
 
 ### G <!-- omit in toc -->
-#### grep <!-- omit in toc -->
-`grep "some string" /path/to/file` looks for some string in file
-- `-e` allows for the use of regex
-  - `egrep` is a similar command to `grep -e` but with a few different options.
-- `-i` case insensitive mode
-- `-v` returns the contents of the file _without_ the matching lines
+>#### grep <!-- omit in toc -->
+>`grep "some string" /path/to/file` looks for some string in file
+>- `-e` allows for the use of regex
+>  - `egrep` is a similar command to `grep -e` but with a few different options.
+>- `-i` case insensitive mode
+>- `-v` returns the contents of the file _without_ the matching lines
 
 ### H <!-- omit in toc -->
-#### head <!-- omit in toc -->
-`head somefile` prints the top lines of the file
-- `-1` through `-20` will print the top _n_ lines of the file, based on what number follows the -
+>#### head <!-- omit in toc -->
+>`head somefile` prints the top lines of the file
+>- `-1` through `-20` will print the top _n_ lines of the file, based on what number follows the -
 
 ### J <!-- omit in toc -->
-#### john <!-- omit in toc -->
-`john some_file_of_credentials` attempts to crack passwords
-- `--format=FORMAT` tells john what format the credentials are
-- `--wordlist=/path/to/wordlist.txt` tells john which wordlist to use
+>#### john <!-- omit in toc -->
+>`john some_file_of_credentials` attempts to crack passwords
+>- `--format=FORMAT` tells john what format the credentials are
+>- `--wordlist=/path/to/wordlist.txt` tells john which wordlist to use
 
-#### jq <!-- omit in toc -->
-`jq {some_regex_pattern} some_json_file.json` parses the json file and returns key/value pairs that match `some_regex_pattern`
+>#### jq <!-- omit in toc -->
+>`jq {some_regex_pattern} some_json_file.json` parses the json file and returns key/value pairs that match `some_regex_pattern`
 
 ### L <!-- omit in toc -->
-#### less <!-- omit in toc -->
-`less somefile` prints an amount of lines in the file
+>#### less <!-- omit in toc -->
+>`less somefile` prints an amount of lines in the file
 
 ### M <!-- omit in toc -->
-#### man <!-- omit in toc -->
-`man some_command` shows the manual pages for some_command, if they exist
+>#### man <!-- omit in toc -->
+>`man some_command` shows the manual pages for some_command, if they exist
 
-#### masscan <!-- omit in toc -->
-`sudo masscan {NETWORK_ID/CIDR}` scans a large range of IPs very quickly
-- `-p` define the ports to scan
+>#### masscan <!-- omit in toc -->
+>`sudo masscan {NETWORK_ID/CIDR}` scans a large range of IPs very quickly
+>- `-p` define the ports to scan
 
-#### md <!-- omit in toc -->5sum
-`md5sum some_file` calculates the MD5 sum of some_file
+>#### md <!-- omit in toc -->5sum
+>`md5sum some_file` calculates the MD5 sum of some_file
 
 ### N <!-- omit in toc -->
-#### nano <!-- omit in toc -->
-launches the nano editor
+>#### nano <!-- omit in toc -->
+>launches the nano editor
 
-#### netstat <!-- omit in toc -->
-`netstat` shows network statistics
-- `-l`
-- `-n`
-- `-p`
+>#### netstat <!-- omit in toc -->
+>`netstat` shows network statistics
+>- `-l`
+>- `-n`
+>- `-p`
   
-#### nmap <!-- omit in toc -->
-`nmap {IP_ADDR or NETWORK_ID/CIDR}` scans the given IP Address or Network range
-```bash
-nmap 192.168.0.1
-nmap 192.168.0.1-254
-nmap 192.168.0.1/24
-```
-- `-p` defines the ports to scan
-  - `-p-` scan all ports
-  - `-p 21,22,23,80,443` scans the ports from a list
-  - `-p 0-1023` scans the ports in a range
-  - `-p 21-25,80,443,445` hybrid of list and range 
-- `--reason` gives reasoning why nmap says what it does
-- `-sV` runs the version scanner
-- `-T5` runs things in a quick configuration
-- `--script=` allows you to run a specific `nmap` script
-  - `dns-brute`
+>#### nmap <!-- omit in toc -->
+>`nmap {IP_ADDR or NETWORK_ID/CIDR}` scans the given IP Address or Network range
+>```bash
+>nmap 192.168.0.1
+>nmap 192.168.0.1-254
+>nmap 192.168.0.1/24
+>```
+>- `-p` defines the ports to scan
+>  - `-p-` scan all ports
+>  - `-p 21,22,23,80,443` scans the ports from a list
+>  - `-p 0-1023` scans the ports in a range
+>  - `-p 21-25,80,443,445` hybrid of list and range 
+>- `--reason` gives reasoning why nmap says what it does
+>- `-sV` runs the version scanner
+>- `-T5` runs things in a quick configuration
+>- `--script=` allows you to run a specific `nmap` script
+>  - `dns-brute`
 
 ### R <!-- omit in toc -->
 #### recon-ng <!-- omit in toc -->
