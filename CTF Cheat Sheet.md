@@ -21,6 +21,7 @@
     - [md5sum](#md5sum)
   - [N](#n)
     - [nano](#nano)
+    - [netstat](#netstat)
     - [nmap](#nmap)
   - [S](#s)
     - [sed](#sed)
@@ -43,12 +44,14 @@
 - [Windows CLI](#windows-cli)
   - [C](#c-1)
     - [certutil](#certutil)
+  - [N](#n-1)
+    - [netstat](#netstat-1)
   - [S](#s-1)
     - [schtasks](#schtasks)
     - [strings](#strings)
 - [Volatility Framework](#volatility-framework)
 - [OS Agnostic CLI](#os-agnostic-cli)
-  - [N](#n-1)
+  - [N](#n-2)
     - [netcat, ncat, nc](#netcat-ncat-nc)
   - [W](#w-2)
     - [whoami](#whoami)
@@ -123,6 +126,12 @@
 ## N
 ### nano
 
+### netstat
+`netstat` shows network statistics
+- `-l`
+- `-n`
+- `-p`
+  
 ### nmap
 `nmap {IP_ADDR or NETWORK_ID/CIDR}` scans the given IP Address or Network range
 ```bash
@@ -190,6 +199,13 @@ enables logging of the current shell
 ## C
 ### certutil
 `certutil -hashfile some_file MD5` calculates the MD5 hash of some_file
+
+## N
+### netstat
+`netstat` shows network statistics
+- `-a`
+- `-n`
+- `-o`
 
 ## S
 ### schtasks
