@@ -107,6 +107,7 @@ nmap 192.168.0.1/24
 - `-sV` runs the version scanner
 - `-T5` runs things in a quick configuration
 - `--script=` allows you to run a specific `nmap` script
+  - `dns-brute`
 
 ### R <!-- omit in toc -->
 #### recon-ng <!-- omit in toc -->
@@ -329,6 +330,12 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 ### aws <!-- omit in toc -->
 `aws` run commands on an amazon web service server
 
+## D <!-- omit in toc -->
+### DeepBlue.ps1 <!-- omit in toc -->
+PowerShell Module for Threat Hunting via Windows Event Logs
+`.\DeepBlue.ps1 <event log name> <evtx filename>`
+- [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
+
 ---
 
 # Other Notes and Useful Information
@@ -374,3 +381,11 @@ _"As long as it's in-scope, I'm going to Cheat"_
 
 ### Recon <!-- omit in toc -->
 Use Spiderfoot and recon-ng
+
+### OSINT Search-Engine Recon <!-- omit in toc -->
+- Google Dorking (504.2 p43)
+- SEC Edgar
+- xlek.com
+- namechk.com
+- whatsmyname.app
+- shodan.io
