@@ -133,6 +133,7 @@ enables logging of the current shell
 
 ### S <!-- omit in toc -->
 #### schtasks <!-- omit in toc -->
+- shows all tasks
 
 #### Sysinternals <!-- omit in toc -->
 These tools from the Sysinternals library run as CLI. When possible use 64bit versions.
