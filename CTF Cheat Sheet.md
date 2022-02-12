@@ -32,6 +32,10 @@
 #### curl <!-- omit in toc -->
 `curl http://some_website_or_ip` downloads the files located on some website or ip
 
+### D <!-- omit in toc -->
+#### dig <!-- omit in toc -->
+DNS Interrogation tool
+
 ### F <!-- omit in toc -->
 #### find <!-- omit in toc -->
 `find / -name somefile` Searches the filesystem for a file
