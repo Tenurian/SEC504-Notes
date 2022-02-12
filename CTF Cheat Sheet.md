@@ -95,9 +95,10 @@ nmap 192.168.0.1/24
   - `-p 21,22,23,80,443` scans the ports from a list
   - `-p 0-1023` scans the ports in a range
   - `-p 21-25,80,443,445` hybrid of list and range 
-- `--reason`
-- `-sV`
-- `-T5`
+- `--reason` gives reasoning why nmap says what it does
+- `-sV` runs the version scanner
+- `-T5` runs things in a quick configuration
+- `--script=` allows you to run a specific `nmap` script
 
 ### R <!-- omit in toc -->
 #### recon-ng <!-- omit in toc -->
