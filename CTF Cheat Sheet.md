@@ -12,6 +12,7 @@
   - [Windows GUI Applications](#windows-gui-applications)
   - [OS Agnostic GUI Applications](#os-agnostic-gui-applications)
 - [Cloud Tools](#cloud-tools)
+- [Other Notes and Useful Information](#other-notes-and-useful-information)
 
 # Command Line Interface
 ## Linux CLI
@@ -303,3 +304,5 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 
 ---
 
+# Other Notes and Useful Information
+TBD
