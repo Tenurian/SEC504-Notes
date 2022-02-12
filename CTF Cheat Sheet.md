@@ -20,7 +20,7 @@
 # Command Line Interface
 ## Linux CLI
 
-### A <!-- omit in toc -->
+>### A <!-- omit in toc -->
 #### awk <!-- omit in toc -->
 `awk -F: '{print $1}'` prints the first field when a file is separated by :
 - `-F` define the Field Separator
