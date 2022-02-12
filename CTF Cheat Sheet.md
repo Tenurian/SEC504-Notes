@@ -13,6 +13,7 @@
   - [OS Agnostic GUI Applications](#os-agnostic-gui-applications)
 - [Cloud Tools](#cloud-tools)
 - [Other Notes and Useful Information](#other-notes-and-useful-information)
+  - [Network Investigations](#network-investigations)
 
 # Command Line Interface
 ## Linux CLI
@@ -323,4 +324,22 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 ---
 
 # Other Notes and Useful Information
-TBD
+
+## Network Investigations
+### Sources <!-- omit in toc -->
+- Network Traffic
+- Network Devices
+  - Servers, Routers, Switches
+- Host Devices
+  - Workstations
+
+### Challenges <!-- omit in toc -->
+- Data Export
+  - information leaving the network that shouldn't be
+- Missing Data
+  - Gaps in Logs
+  - Missing User Accounts, Registry Keys, profiles, etc.
+  - "The bird's stopped chirping."
+- Encryption
+  - a la ransomware
+  - executables that can't be run without the encryption key (making antivirus's job that much harder)
