@@ -21,6 +21,8 @@
     - [nano](#nano)
     - [netstat](#netstat)
     - [nmap](#nmap)
+  - [R](#r)
+    - [recon-ng](#recon-ng)
   - [S](#s)
     - [sed](#sed)
     - [script](#script)
@@ -59,7 +61,7 @@
 - [B](#b)
     - [BeEF](#beef)
 - [Windows GUI Applications](#windows-gui-applications)
-  - [R](#r)
+  - [R](#r-1)
     - [RegEdit](#regedit)
   - [S](#s-2)
     - [Services.msc](#servicesmsc)
@@ -148,6 +150,10 @@ nmap 192.168.0.1/24
 - `--reason`
 - `-sV`
 - `-T5`
+
+## R
+### recon-ng
+OSINT tool
 
 ## S
 ### sed
@@ -286,3 +292,6 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 ## A
 ### aws
 `aws` run commands on an amazon web service server
+
+---
+
