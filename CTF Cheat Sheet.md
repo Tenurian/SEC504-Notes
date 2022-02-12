@@ -2,6 +2,11 @@
 
 - [Command Line Interface](#command-line-interface)
   - [Linux CLI](#linux-cli)
+    - [F](#f)
+      - [find](#find)
+    - [V](#v)
+      - [vi](#vi)
+      - [vim](#vim)
   - [Windows CLI](#windows-cli)
   - [OS Agnostic CLI](#os-agnostic-cli)
 - [Frameworks](#frameworks)
@@ -27,6 +32,15 @@
 ### C <!-- omit in toc -->
 #### curl <!-- omit in toc -->
 `curl http://some_website_or_ip` downloads the files located on some website or ip
+
+### F
+#### find
+`find / -name somefile` Searches the filesystem for a file
+- `-name` sets the filename to look for. * is a wildcard
+- `-iname` looks for a file case-insensitively
+- `-exec` executes the next lines of code.
+  - this can be used for PrivEsc with `sudo` permissions, like so:
+    - `sudo find . -exec /bin/bash {} \;`
 
 ### G <!-- omit in toc -->
 #### grep <!-- omit in toc -->
@@ -66,6 +80,7 @@
 
 ### N <!-- omit in toc -->
 #### nano <!-- omit in toc -->
+launches the nano editor
 
 #### netstat <!-- omit in toc -->
 `netstat` shows network statistics
@@ -107,6 +122,18 @@ enables logging of the current shell
 
 #### tcpdump <!-- omit in toc -->
 - `-n` disables name resolution
+
+### V
+#### vi
+Launches the vi editor
+- not sure why you'd ever need this on your own attack platform as you should have `vim` or `nano` installed, but still useful for when you get onto pivot machines that don't have either of those and you need a command-line editor.
+
+#### vim
+Launches the VI Improved editor
+- I'm not good at using `vi` or `vim` so you'll have to get help from the documentation. I do know you can do a shell escape with both `vi` and `vim` by running something along the lines of:
+  - `sudo vi somefile`
+  - (once inside the editor, press `[ESC]` and run the following command:)
+  - `!/bin/bash`
 
 ### W <!-- omit in toc -->
 #### w <!-- omit in toc -->
