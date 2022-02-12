@@ -14,6 +14,8 @@
 - [Cloud Tools](#cloud-tools)
 - [Other Notes and Useful Information](#other-notes-and-useful-information)
   - [Network Investigations](#network-investigations)
+  - [Memory Investigation](#memory-investigation)
+  - [Recon, Scanning, and Enumeration](#recon-scanning-and-enumeration)
 
 # Command Line Interface
 ## Linux CLI
@@ -149,6 +151,8 @@ Launches the VI Improved editor
 `w` prints a list of all currently logged on users and what they're doing
 #### who <!-- omit in toc -->
 `who` prints a list of all currently logged on users
+#### whois <!-- omit in toc -->
+DNS interrogation query
 
 ### Z <!-- omit in toc -->
 #### zgrep <!-- omit in toc -->
@@ -343,3 +347,26 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 - Encryption
   - a la ransomware
   - executables that can't be run without the encryption key (making antivirus's job that much harder)
+
+| Old-School | New School |
+|------------|------------|
+|`.pcap`     |`.pcapng`   |
+
+Use TCPDump with BPF when capturing live traffic to cut out unwanted traffic during investiations
+
+Bypassing Proxies means 1 of 2 things;
+- The proxy is misconfigured
+- They're intentionally bypassing the proxy
+
+`robotx.txt` is a goldmine when exploiting webapps
+
+## Memory Investigation
+- Virtual Environment ≠ Virtual Machine
+- Make sure memory dumps also come with OS and Version
+
+## Recon, Scanning, and Enumeration
+_"As long as it's in-scope, I'm going to Cheat"_
+\- Mr. Douglas
+
+### Recon <!-- omit in toc -->
+Use Spiderfoot and recon-ng
