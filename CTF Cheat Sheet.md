@@ -3,7 +3,7 @@
 - [Linux CLI](#linux-cli)
   - [A](#a)
     - [awk](#awk)
-  - [c](#c)
+  - [C](#c)
     - [curl](#curl)
   - [G](#g)
     - [grep](#grep)
@@ -48,7 +48,7 @@
     - [netstat](#netstat-1)
   - [S](#s-1)
     - [schtasks](#schtasks)
-    - [strings](#strings)
+    - [Sysinternals](#sysinternals)
 - [Volatility Framework](#volatility-framework)
 - [OS Agnostic CLI](#os-agnostic-cli)
   - [N](#n-2)
@@ -62,13 +62,15 @@
     - [RegEdit](#regedit)
   - [S](#s-2)
     - [Services.msc](#servicesmsc)
-    - [Sysinternals](#sysinternals)
+    - [Sysinternals](#sysinternals-1)
   - [T](#t-1)
     - [Task Scheduler](#task-scheduler)
 - [OS Agnostic GUI Applications](#os-agnostic-gui-applications)
   - [S](#s-3)
     - [Spiderfoot](#spiderfoot)
 - [Cloud Tools](#cloud-tools)
+  - [A](#a-1)
+    - [aws](#aws)
 
 
 # Linux CLI
@@ -78,7 +80,7 @@
 - `-F` define the Field Separator
   - `awk -F:` will split whatever you give it on the `:` character
 
-## c
+## C
 ### curl
 `curl http://some_website_or_ip` downloads the files located on some website or ip
 
@@ -210,7 +212,12 @@ enables logging of the current shell
 ## S
 ### schtasks
 
-### strings
+### Sysinternals
+These tools from the Sysinternals library run as CLI. When possible use 64bit versions.
+- Procdump
+- PsExec
+- PsList
+- Strings
 
 # Volatility Framework
 `vol.py` runs the volatility framework
@@ -246,13 +253,10 @@ enables logging of the current shell
 ### Services.msc
 
 ### Sysinternals
+These tools from the Sysinternals library run as GUI Apps. When possible, use the 64bit versions.
 - AutoRuns
-- Procdump
 - Procexp
 - Procmon
-- PsExec
-- PsList
-- Strings
 - TCPView
 
 ## T
@@ -267,3 +271,7 @@ enables logging of the current shell
 ---
 
 # Cloud Tools
+
+## A
+### aws
+`aws` run commands on an amazon web service server
