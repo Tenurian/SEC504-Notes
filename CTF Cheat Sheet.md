@@ -53,6 +53,7 @@ DNS Interrogation tool
 - `-i` case insensitive mode
 - `-v` returns the contents of the file _without_ the matching lines
 
+### H <!-- omit in toc -->
 #### head <!-- omit in toc -->
 `head somefile` prints the top lines of the file
 - `-1` through `-20` will print the top _n_ lines of the file, based on what number follows the -
