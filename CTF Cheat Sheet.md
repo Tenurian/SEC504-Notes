@@ -113,12 +113,18 @@ nmap 192.168.0.1/24
 #### recon-ng <!-- omit in toc -->
 OSINT tool
 
+#### rpcclient <!-- omit in toc -->
+allows linux to send remote procedure calls to windows machines
+
 ### S <!-- omit in toc -->
 #### script <!-- omit in toc -->
 enables logging of the current shell
 
 #### sed <!-- omit in toc -->
 `sed "s/somepattern/replacement/" file_or_string` replaces instances of somepattern with replacement 
+
+#### smbclient <!-- omit in toc -->
+allows linux to interact with windows smb
 
 #### sudo <!-- omit in toc -->
 `sudo ls` "**S**uper **U**ser **DO**". Runs things as root. Commonly used to  PrivEsc.
