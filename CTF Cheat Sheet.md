@@ -116,7 +116,12 @@ enables logging of the current shell
 - `-1` through `-20` will print the bottom _n_ lines of the file, based on what number follows the -
 
 #### tcpdump <!-- omit in toc -->
+- `-A` prints the ASCII Hex output of the packet
+- `-i` tells `tcpdump` which interface to use
+  - We should be using `TAP1` or something similar in the CTF Challenge
+  - `lo` is the loopback virtual interface
 - `-n` disables name resolution
+- `-v` enables verbose mode (more v = more verbose)
 
 ### V <!-- omit in toc -->
 #### vi <!-- omit in toc -->
