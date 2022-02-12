@@ -169,6 +169,12 @@ DNS interrogation query
 #### certutil <!-- omit in toc -->
 `certutil -hashfile some_file MD5` calculates the MD5 hash of some_file
 
+## D <!-- omit in toc -->
+### DeepBlue.ps1 <!-- omit in toc -->
+PowerShell Module for Threat Hunting via Windows Event Logs
+`.\DeepBlue.ps1 <event log name> <evtx filename>`
+- [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
+
 ### N <!-- omit in toc -->
 #### netstat <!-- omit in toc -->
 `netstat` shows network statistics
@@ -329,12 +335,6 @@ OSINT tool (WebAPP). Might not be used in CTF but still useful.
 ## A <!-- omit in toc -->
 ### aws <!-- omit in toc -->
 `aws` run commands on an amazon web service server
-
-## D <!-- omit in toc -->
-### DeepBlue.ps1 <!-- omit in toc -->
-PowerShell Module for Threat Hunting via Windows Event Logs
-`.\DeepBlue.ps1 <event log name> <evtx filename>`
-- [Documentation](https://github.com/sans-blue-team/DeepBlueCLI)
 
 ---
 
