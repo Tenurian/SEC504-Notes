@@ -56,7 +56,8 @@
   - [W](#w-2)
     - [whoami](#whoami)
 - [Linux GUI Applications](#linux-gui-applications)
-  - [BeEF](#beef)
+- [B](#b)
+    - [BeEF](#beef)
 - [Windows GUI Applications](#windows-gui-applications)
   - [R](#r)
     - [RegEdit](#regedit)
@@ -236,20 +237,18 @@ These tools from the Sysinternals library run as CLI. When possible use 64bit ve
 `whoami` prints the username of whomever you're currently logged on as
 
 ---
----
 
 # Linux GUI Applications
 
-## BeEF
+# B
+### BeEF
 
 # Windows GUI Applications
 
 ## R
-
 ### RegEdit
 
 ## S
-
 ### Services.msc
 
 ### Sysinternals
@@ -260,7 +259,6 @@ These tools from the Sysinternals library run as GUI Apps. When possible, use th
 - TCPView
 
 ## T
-
 ### Task Scheduler
 
 # OS Agnostic GUI Applications
