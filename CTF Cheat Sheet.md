@@ -117,6 +117,7 @@ enables logging of the current shell
 
 #### tcpdump <!-- omit in toc -->
 It's like wireshark but for CLI. Uses Berkeley Packet Filtering.
+`tcpdump -i eth0 'src host 192.168.0.1 and dst port 80'`
 - `-A` prints the ASCII Hex output of the packet
 - `-i` tells `tcpdump` which interface to use
   - We should be using `TAP1` or something similar in the CTF Challenge
