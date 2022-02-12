@@ -187,7 +187,17 @@ applications execute interactively.
 
 ### W <!-- omit in toc -->
 #### wmic <!-- omit in toc -->
+`wmic {WMI_TYPE} list {brief/full}` WMIC is a software utility that allows users to performs Windows Management Instrumentation (WMI) operations with a command prompt.
+- `process` gets information for all processes
+- `service` gets information for all services 
+- `where {FIELD}="{VALUE}"` simple filtering, example being:
+  - `where name=nssm.exe`
+- `list brief` short list
+- `list full` used to view more detailed info about what's being searched
 
+Useful examples: 
+- `wmic process where name="FlashUpdate.exe" list full`
+- `wmic service where name="WpnUserService_5d314e6" list full`
 
 ## OS Agnostic CLI
 
