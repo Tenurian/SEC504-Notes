@@ -7,8 +7,6 @@
     - [curl](#curl)
   - [G](#g)
     - [grep](#grep)
-  - [H](#h)
-    - [hashcat](#hashcat)
     - [head](#head)
   - [J](#j)
     - [john](#john)
@@ -51,6 +49,8 @@
     - [Sysinternals](#sysinternals)
 - [Volatility Framework](#volatility-framework)
 - [OS Agnostic CLI](#os-agnostic-cli)
+  - [H](#h)
+    - [hashcat](#hashcat)
   - [N](#n-2)
     - [netcat, ncat, nc](#netcat-ncat-nc)
   - [W](#w-2)
@@ -78,8 +78,11 @@
 
 ## A
 ### awk
+`awk -F: '{print $1}'` prints the first field when a file is separated by :
 - `-F` define the Field Separator
   - `awk -F:` will split whatever you give it on the `:` character
+- `'{print $1}'` prints field 1
+  - the number can be swapped out from 0 to however many columns exist when the line is split based on the field separator
 
 ## C
 ### curl
@@ -91,12 +94,6 @@
 - `-e` allows for the use of regex
 - `-i` case insensitive mode
 - `-v` returns the contents of the file _without_ the matching lines
-
-## H
-### hashcat
-`hashcat some_file_of_hashes` attempts to crack the hashes
-- `-a`
-- `-m`
 
 ### head
 `head somefile` prints the top lines of the file
@@ -225,6 +222,13 @@ These tools from the Sysinternals library run as CLI. When possible use 64bit ve
 
 # OS Agnostic CLI
 
+## H
+### hashcat
+`hashcat some_file_of_hashes some_wordlist` attempts to crack the hashes using the provided wordlist
+- `-a` sets hashcat to attack mode (used when cracking passwords)
+- `-h` shows the help menu (useful for finding which hashing mode you want to use)
+- `-m` sets the hashing mode
+
 ## N
 ### netcat, ncat, nc
 `netcat 192.168.0.2 4444` makes a connection to 192.168.0.2 on port 4444
@@ -242,21 +246,27 @@ These tools from the Sysinternals library run as CLI. When possible use 64bit ve
 
 # B
 ### BeEF
+Used for website attacks. Many options and configurations
 
 # Windows GUI Applications
 
 ## R
 ### RegEdit
+Registry Viewer
+- `HKLM\Software\Microsoft\Windows\CurrentVersion\...`
+  - `\Run` Starts the program every time someone logs in or system boots (need to figure out which)
+  - `\RunOnce` Starts the program only once when someone logs in / system boots (need to figure out which) then removes this key from the registry
 
 ## S
 ### Services.msc
+Service Viewer. Useful for finding malicious services based on signing and privilege level.
 
 ### Sysinternals
 These tools from the Sysinternals library run as GUI Apps. When possible, use the 64bit versions.
-- AutoRuns
-- Procexp
-- Procmon
-- TCPView
+- `AutoRuns` Lists everything that starts when user logs in. BE SURE TO ENABLE WINDOWS SERVICES AND PROCESSES! 
+- `Procexp` Shows heirarchial view of all processes (Useful to see if one program spawned a child program it shouldn't)
+- `Procmon` Monitors just about everything going on in the processes. Filter down by the specific process that's suspicious.
+- `TCPView` Shows all network traffic. Useful to see if a program that shouldn't be making network connections is sending or receiving traffic 
 
 ## T
 ### Task Scheduler
